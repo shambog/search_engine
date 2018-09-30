@@ -1,0 +1,21 @@
+<!doctype html>
+<html>
+{% load staticfiles %}
+<meta charset="utf-8">
+<link rel ="stylesheet" href = {% static "css/style.css" %}>
+<header class="v-header container">
+    <div class="fullscreen-video-wrap">
+      
+      <video src="{% static "img/2.mp4"  %}" autoplay="true" loop="true">
+    </video>
+    </div>
+    <div class="header-overlay"></div>
+    <div class="header-content text-md-center">
+      <h1 style="font-family:arial;">K   H   O   J</h1>
+        {% block content %}
+	{% endblock %}
+	</div>
+  </header>
+</html>
+
+

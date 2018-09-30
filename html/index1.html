@@ -1,0 +1,7 @@
+{% extends 'personal/header.html' %}
+{% block content %}
+<form action="{% url 'personal:search' 1%}" method="get">
+      <input type="text" name="tosearch" value="{{request.GET.tosearch}}" placeholder="        What are you looking for ?" class="box">
+      <button class="btn" type="submit"> Go </button>
+    </form>
+{% endblock %}

@@ -1,0 +1,6 @@
+{% extends 'personal/header2.html' %}
+{% block content %}
+	{% for i in newq %}
+		<h5><a href="{{ i }}">{{ i }}</a></h5>
+	{% endfor %}
+{% endblock %}

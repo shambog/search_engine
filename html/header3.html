@@ -1,0 +1,38 @@
+<!doctype html>
+<html>
+{% load staticfiles %}
+<meta charset="utf-8">
+<link rel ="stylesheet" href = {% static "css/style2.css" %}>
+<header class="v-header container">
+    <div class="fullscreen-video-wrap">
+      
+      <video src="{% static "img/2.mp4"  %}" autoplay="true" loop="true">
+    </video>
+    </div>
+        <div class="header-overlay"></div>
+      <div class="header-content text-lg-center">
+        <br>
+	<form action="{% url 'personal:index' %}" method="get">
+      <button class="btn" type="submit"> Home </button>
+    </form>
+<br>
+	<form action="{% url 'personal:relevance' 1 1%}" method="get">
+      <input type="text" name="reldoc" value="{{request.GET.reldoc}}" placeholder="  Relevant Document" class="box">
+      <button class="btn1" type="submit"> Similar </button>
+	<input type="hidden" name="reldoc1" value="def" class="box">
+    </form>
+	<br>
+	{% block content %}
+	{% endblock %}
+	</div>
+</header>
+<body>
+	<div class="body-overlay"></div>
+	<div class="body-content text-right">
+	
+	</div>
+</body>
+</html>
+  
+  
+

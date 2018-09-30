@@ -1,0 +1,6 @@
+{% extends 'personal/header3.html' %}
+{% block content %}
+	{% for i in new_reldoc %}
+		<h5><a href="{{ i }}">{{ i }}</a></h5>
+	{% endfor %}
+{% endblock %}
