@@ -1,0 +1,144 @@
+*{
+    box-sizing: border-box;
+  }
+
+  body{
+    margin:0;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-size:1rem;
+    font-weight:normal;
+    line-height:1.5;
+    color:#333;
+overflow-x:scroll;
+
+  }
+  a, u {
+    color: #66ffff;
+    text-decoration: none;
+  }
+
+  .v-header{
+    height:50vh;
+    display:flex;
+    align-items:Left;
+    color:#ccffff;
+    text-align: Left;
+    
+  }
+
+    .v-body{
+    height:50vh;
+    display:flex;
+    align-items:Left;
+    color#ccffff;
+    text-align: Left;
+
+  }
+  
+  .container{
+    max-width:960px;
+    padding-left:0rem;
+    padding-right:1rem;
+    margin:auto;
+    text-align:Left;
+
+  }
+  
+  .fullscreen-video-wrap{
+    position:absolute;
+    top:0;
+    left:0;
+    width:auto;
+    height:auto;
+    overflow:auto;
+
+  }
+  
+  .fullscreen-video-wrap video{
+    min-height:100%;
+    min-width:100%;
+
+  }
+  
+  .header-overlay{
+    height:100vh;
+    position: absolute;
+    top:2;
+    left:0;
+    width:100vw;
+    z-index:1;
+    
+    opacity:0.85;
+
+  }
+
+  .body-overlay{
+    height:100vh;
+    position: absolute;
+    top:0;
+    left:0;
+    width:100vw;
+    z-index:1;
+    
+    opacity:0.85;
+
+  }
+  
+  .header-content{
+    z-index:19;
+
+  }
+  
+  .body-content{
+    z-index:19;
+
+  }
+
+  .btn{
+    background: #27b19c;
+    color:#fff;
+    font-size:1rem;
+    padding: 0.3rem 0.7rem;
+    text-decoration: none;
+    border-radius: 8px;
+        
+  }
+
+  .btn1{
+    width: 70px;
+    height: 27px;
+    background: #27b19c;
+    color:#fff;
+    font-size:0.9rem;
+    padding: 0.2rem 0.3rem;
+    text-decoration: none;
+	
+        
+  }
+
+ .box {
+    width: 200px;
+    height: 27px;
+    text-align: center;
+    padding-bottom:0.2rem; 
+    padding-top:0.2rem; 
+    font-size: 15px; 
+      
+  }
+  
+.h5{
+	color:#00ff00
+	overflow:scroll;
+    background-attachment:fixed;
+	position: absolute;
+    -webkit-background-size:cover;
+    background-repeat:no-repeat;
+}
+
+  @media(max-width:960px){
+    .container{
+      padding-right:3rem;
+      padding-left:3rem;
+
+    }
+ 
