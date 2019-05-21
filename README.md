@@ -21,3 +21,9 @@ The user types in a keyword to search.
 ## Project Structure
 
 1. **views.py** This is the Django
+2. **queryproc.py** This 
+3. **urls.py** This 
+4. **main.py** This file is the main method.
+5. **crawler.py** This is the crawling program that crawls and collects information of our specified domain (eg: HowStuffWorks)
+6. **preprocess.py** This is the pre-processer script that cleans the data (words) and arranges them.
+7. **inverted_index.py** This
